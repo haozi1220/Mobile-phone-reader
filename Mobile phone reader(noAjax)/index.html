@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=640,user-scalable=no" />
+		<title>手机阅读器</title>
+		<link rel="stylesheet" href="css/index.css"/>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/loading.js"></script>
+	</head>
+	<body>
+	    <section class="page pageShow" id="firPage">
+	    	<div class="loading">
+	    		<img src="image/loading.png" />
+	    	</div>
+    		<p class="loadWait">
+    			<span>Please waiting</span>
+    			<span>to loading</span>
+    		</p>
+    		<ul class="loadSol">
+    			<li></li>
+    			<li></li>
+    			<li></li>
+    			<li></li>
+    		</ul>
+	    </section>
+	    <script>
+	    	fnLoad();
+	    </script>
+	    <section class="page" id="secPage">
+	    	<div class="loading">
+	    		<img src="image/loading.png" />
+	    	</div>
+	    	<p class="reminder">
+	    		<span>请您先登录</span>
+	    		<span>如您没有账号请先注册</span>
+	    	</p>
+	    	<div class ="loginRes">
+	    		<span id="login">登录</span>
+	    		<span class="active1" id="register">注册</span>
+	    	</div>
+	    </section>
+	    <section class="page" id="loginPage">
+	    	<div class="loginHeader">
+	    		<span></span>
+	    	</div>
+	    	<div class="userWrap">
+	    		<div class="userPhoto"></div>
+	    		<p>
+	    			<span class="ico user"></span>
+	    			<input type="username" />
+	    			<span class="cleaer"></span>
+	    		</p>
+	    		<p>
+	    			<span class="ico password"></span>
+	    			<input type="password" />
+	    			<span class="cleaer"></span>
+	    		</p>
+	    		<p>忘记密码？</p>
+	    	</div>
+	    	<div class="btnWrap">
+	    		<div class="login active3">登录</div>
+	    		<div class="register">注册</div>
+	    	</div>
+	    	<div class="threeLog">
+	    		<div class="threeTitle">
+	    			<span></span>
+	    			<span>第三方登录</span>
+	    			<span></span>
+	    		</div>
+	    		<div class="threeIco">
+	    			<span></span>
+	    			<span></span>
+	    			<span></span>
+	    		</div>
+	    	</div>
+	    	<div class="errWarning">
+	    		<p>您的密码有错误,再细心一点就可以啦！</p>
+	    	</div>
+	    </section>
+	    <section class="page" id="regPage">
+	    	<div class="btnWrap1">
+	    		<span></span><span></span>
+	    	</div>
+	    	<div class="userWrap">
+	    		<div class="userPhoto"></div>
+	    		<strong id="portraitEditor">修改头像</strong>
+	    		<p>
+	    			<span class="ico user"></span>
+	    			<input type="username" />
+	    			<span class="cleaer"></span>
+	    		</p>
+	    		<p>
+	    			<span class="ico email"></span>
+	    			<input type="username" />
+	    			<span class="cleaer"></span>
+	    		</p>
+	    		<p id="passwordWrap">
+	    			<span class="ico password"></span>
+	    			<input type="password" />
+	    			<span class="cleaer"></span>
+	    		</p>
+	    	</div>
+	    	<div class="btnWrap">
+	    		<div class="register active3">注册</div>
+	    	</div>
+	    </section>
+	    <section class="page">
+	    	<div class="setHeader">
+	    		<span></span>
+	    		<span>设置</span>
+	    		<span></span>
+	    	</div>
+	    	<div class="persionInfo">
+	    		<div class="infoWrap">
+		    		<h2>个人信息</h2>
+		    		<p>
+		    			<span class="ico1">昵称</span>
+		    			<input type="text"/>
+		    		</p>
+		    		<p>
+		    			<span class="ico1">性别</span>
+		    			<input type="text"/>
+		    		</p>
+		    		<p>
+		    			<span class="ico1">生日</span>
+		    			<input type="text"/>
+		    		</p>
+		    		<p>
+		    			<span class="ico1">个性签名</span>
+		    			<input type="text"/>
+		    		</p>
+		    		<p>
+		    			<span class="ico1">手机号码</span>
+		    			<input type="text"/>
+		    		</p>
+	    		</div>
+	    	</div>
+	    </section>
+	    <section class="page">
+	    	<div class="shelfHeader">
+	    		<span></span>
+	    		<span>书架</span>
+	    		<span></span>
+	    	</div>
+	    	<div class="listWrap">
+	    		<ul class="bookList">
+	    			<li></li>
+	    			<li></li>
+	    			<li></li>
+	    			<li></li>
+	    			<li></li>
+	    			<li></li>
+	    			<li></li>
+	    			<li></li>
+	    			<li></li>
+	    			<li></li>
+	    			<li></li>
+	    			<li></li>
+	    			<li></li>
+	    			<li></li>
+	    			<li></li>
+	    			<li></li>
+	    			<li></li>
+	    			<li></li>
+	    			<li></li>
+	    			<li></li>
+	    		</ul>
+	    	</div>
+	    	<section class="shelfFooter">
+	    		<p>
+	    			<span class="shelf"></span>
+	    			<strong>书架</strong>
+	    		</p>
+	    		<p>
+	    			<span class="jingxuan"></span>
+	    			<strong>精选</strong>
+	    		</p>
+	    	</section>
+	    </section>
+	</body>
+	 <script type="text/javascript">
+    	document.body.style.height = view().h + 'px';
+    </script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,user-scalable=no"/>
+		<title>demo</title>
+		<style type="text/css">
+			body{
+				width: 100%;
+				-height: 100%;
+				margin: 0 ;
+				position: relative;
+			}
+			#box{
+				width: 200px;
+				height: 200px;
+				background: yellow;
+				position: absolute;
+				left: 20px;
+				top: 20px;
+			}
+		</style>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+	    <script>
+	    	document.body.style.height = view().h+'px';
+	    </script>
+	    <div id="box"></div>
+	</body>
+</html>
